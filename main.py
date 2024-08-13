@@ -138,11 +138,14 @@ def parse_and_analyze_sofa_prices():
     # Улучшение стиля гистограммы цен
     plt.figure(figsize=(10, 6))
     plt.hist(df['price'], bins=20, color='salmon', alpha=0.7, edgecolor='black')
+    plt.axvline(average_price, color='blue', linestyle='dashed', linewidth=2,
+                label=f'Средняя цена: {average_price:.2f} руб.')
     plt.title('Гистограмма цен на диваны', fontsize=14, fontweight='bold')
     plt.xlabel('Цена (рубли)', fontsize=12)
     plt.ylabel('Частота', fontsize=12)
     plt.xticks(fontsize=10)
     plt.yticks(fontsize=10)
+    plt.legend()
     plt.grid(True)
     plt.show()
 
