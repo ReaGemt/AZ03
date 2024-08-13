@@ -55,8 +55,8 @@ def generate_and_visualize_random_data():
     plt.show()
 
     # 2 Генерация двух наборов случайных данных для диаграммы рассеяния
-    x = np.random.rand(100)
-    y = np.random.rand(100)
+    x = np.random.rand(16)
+    y = np.random.rand(16)
 
     # Улучшение стиля диаграммы рассеяния
     plt.figure(figsize=(10, 6))
